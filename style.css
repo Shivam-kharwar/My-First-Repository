@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 50px;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background{
+    position: absolute;
+    transform: translateZ(-100px) scale(3.1);
+    object-fit: cover;
+}
+
+.foreground{
+    transform: translateZ(-50px) scale(1.2);
+    object-fit: contain;
+    position: relative;
+    top: 40%;
+}
+
+h1{
+    position: absolute;
+    font-family: sans-serif;
+    top: 5rem;
+    font-size: 7rem;
+    color: white;
+    letter-spacing: 6px;
+    text-shadow: 4px 0 2px rgba(48, 47, 47, 0.5);
+}
+
+.background, .foreground{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    z-index: -1;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color:white ;
+    padding: 5rem 0;
+}
+
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg1{
+    background-image: url(./assets/sports_1.jpg);
+    background-repeat: no-repeat;
+}
+
+.bg2{
+    background-image: url(./assets/sports_2.jpg);
+        background-repeat: no-repeat;
+
+}
+
+.bg3{
+    background-image: url(./assets/sports_3.webp);
+        background-repeat: no-repeat;
+
+}
